@@ -29,7 +29,7 @@ const actions = {
         try {
             response = await Vue.http
             .get(
-            "http://lumen.lilycourt.ng/api/v1/transaction_history_portfolio_add/"+token+'/'+user_id+'/'+user_portfolio_id+'/'+amount+'/'+payment_medium+'/'+payment_date+'/'+other_information
+            "https://lumen.lilycourt.ng/api/v1/transaction_history_portfolio_add/"+token+'/'+user_id+'/'+user_portfolio_id+'/'+amount+'/'+payment_medium+'/'+payment_date+'/'+other_information
             );
 
             recieved_data = response.body.message;
@@ -56,7 +56,7 @@ const actions = {
         try {
             response = await Vue.http
             .get(
-            "http://lumen.lilycourt.ng/api/v1/transaction_history/portfolio/"+user_portfolio_id+'/'+token
+            "https://lumen.lilycourt.ng/api/v1/transaction_history/portfolio/"+user_portfolio_id+'/'+token
             );
 
             recieved_data = response.body.message;

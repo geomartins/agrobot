@@ -25,7 +25,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/transaction_lists/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/transaction_lists/",{ params: value}
              );
 
              
@@ -47,7 +47,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/transaction_lists_search/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/transaction_lists_search/",{ params: value}
              );
 
              return await response;

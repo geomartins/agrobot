@@ -61,7 +61,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/generate_payment_plans/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/generate_payment_plans/",{ params: value}
              );
 
              return await response;
@@ -81,7 +81,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/generate_room_types/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/generate_room_types/",{ params: value}
              );
 
              return await response;
@@ -102,7 +102,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/generate_equity_types/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/generate_equity_types/",{ params: value}
              );
 
              return await response;
@@ -124,7 +124,7 @@ const actions = {
         try {
              var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/users_portfolio_add/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/users_portfolio_add/",{ params: value}
              );
              return await response;
  
@@ -147,7 +147,7 @@ const actions = {
         try {
              var response = await axios
              .get(
-                 "http://lumen.lilycourt.ng/api/v1/list_my_portfolios/",{ params: value}
+                 "https://lumen.lilycourt.ng/api/v1/list_my_portfolios/",{ params: value}
              );
 
             
