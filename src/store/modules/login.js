@@ -40,11 +40,11 @@ const actions = {
         //http://localhost:8080/
 
        
-
+        
             try {
                var response = await axios
                 .get(
-                    "https://agrobot.martinsabiodun94.now.sh/api/v1/users/login/",{ params: value, crossdomain: true}
+                    "/api/v1/users/login/",{ params: value, crossdomain: true}
                 );
                 console.log('uuuuuuuu')
                 return await response;
