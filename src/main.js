@@ -10,7 +10,7 @@ import VueApexCharts from 'vue-apexcharts'
 import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 
 
 
