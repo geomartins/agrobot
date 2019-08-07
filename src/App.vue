@@ -9,12 +9,26 @@
 </template>
 
 <script>
-  //import 
+  //import pick from './repositories/pick.js'
   export default{
+    //mixins: [pick],
     data(){
       return {
 
       }
+      
+    },
+    methods: {
+      api_calls: function(){
+          
+      }
+    },
+    created(){
+
+        // if(this.validateBrowser() == false){
+
+        // }
+
     }
   }
 </script>

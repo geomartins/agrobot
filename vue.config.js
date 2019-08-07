@@ -1,6 +1,6 @@
-// module.exports = {
-//     // options...
-//     devServer: {
-//           proxy: 'https://lumen.lilycourt.ng/',
-//       }
-// }
+module.exports = {
+    // options...
+    devServer: {
+          proxy: 'https://lumen.lilycourt.ng/',
+      }
+}

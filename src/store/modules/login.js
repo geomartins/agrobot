@@ -37,15 +37,15 @@ const mutations = {  //this.store.commit('updateEmail',value)
 const actions = {
 
       async login({commit},value){
+        //http://localhost:8080/
 
        
 
             try {
                var response = await axios
                 .get(
-                    "https://lumen.lilycourt.ng/api/v1/users/login/",{ params: value}
+                    "https://agrobot.martinsabiodun94.now.sh/api/v1/users/login/",{ params: value, crossdomain: true}
                 );
-
                 console.log('uuuuuuuu')
                 return await response;
     

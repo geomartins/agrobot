@@ -122,10 +122,10 @@ export default {
                 if(this.isValidToken(access_token) == true){
                  await this.api_calls2(api_payload).then(()=>{
 
-                    setTimeout(function(){ 
+                    //setTimeout(function(){ 
                       //x.$router.push('/admin/dashboard');
                       window.location.href="/admin/dashboard";
-                    }, 3000);
+                    //}, 3000);
                      
                  })
                 }
