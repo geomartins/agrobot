@@ -221,7 +221,7 @@
         },
       } ,
       
-      async mounted(){
+      async created(){
 
           //updating title meta tag
           this.$store.commit('updateTitle','Dashboard');
