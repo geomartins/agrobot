@@ -110,27 +110,31 @@ export default {
       
            if( response && 'status' in response){
 
-              //If it is successful
-              if(response.status == 200){
-                let api_payload = response.data.message.original;
-                let access_token = api_payload.access_token;
-                
-                // console.log(this.isValidToken(access_token))
+             console.log(response);
 
-                if(this.isValidToken(access_token) == true){
-                 await this.api_calls2(api_payload).then(()=>{
-                     x.$router.push('/admin/dashboard');
-                 })
-                }
-              }
+              // //If it is successful
+              // if(response.status == 200){
+              //   let api_payload = response.data.message.original;
+              //   let access_token = api_payload.access_token;
+                
+              //   // console.log(this.isValidToken(access_token))
+
+              //   if(this.isValidToken(access_token) == true){
+              //    await this.api_calls2(api_payload).then(()=>{
+              //        x.$router.push('/admin/dashboard');
+              //    })
+              //   }
+              // }
 
                //If an error occured
               if(response.status == 400 || response.status == 404){
-                  x.customAlert({
-                  type: "error",
-                  text: response.data.message,
-                  title: "Oooops"
-                  });
+
+                console.log(response);
+                  // x.customAlert({
+                  // type: "error",
+                  // text: response.data.message,
+                  // title: "Oooops"
+                  // });
               }
               
             } 
