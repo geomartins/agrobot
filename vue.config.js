@@ -1,6 +1,6 @@
 module.exports = {
     // options...
     devServer: {
-          proxy: 'https://backend.test/',
+          proxy: 'https://lumen.lilycourt.ng/',
       }
 }
