@@ -46,7 +46,7 @@ const actions = {
                 .get(
                     "/api/v1/users/login/",{ params: value, crossdomain: true}
                 );
-                console.log('uuuuuuuu')
+                console.log(response)
                 return await response;
     
     
