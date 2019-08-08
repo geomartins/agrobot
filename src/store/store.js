@@ -78,7 +78,7 @@ export const store = new Vuex.Store({
             try {
                 var response = await axios
                  .get(
-                    "/api/v1/charts/",{ params: value}
+                    "https://agrobot.onrender.com/api/v1/charts/",{ params: value}
                  );
 
                  return await response;
@@ -107,7 +107,7 @@ export const store = new Vuex.Store({
             try {
                 var response = await axios
                  .get(
-                    "/api/v1/counters/",{ params: value}
+                    "https://agrobot.onrender.com/api/v1/counters/",{ params: value}
                  );
  
                  return await response;
