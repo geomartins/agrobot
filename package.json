@@ -2,6 +2,7 @@
   "name": "agrobot",
   "version": "0.1.0",
   "private": true,
+  "deploy": "npm run build && now && now alias",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
