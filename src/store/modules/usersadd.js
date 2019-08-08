@@ -23,7 +23,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "https://lumen.lilycourt.ng/api/v1/users_register/",{ params: value}
+                 "/api/v1/users_register/",{ params: value}
              );
 
              return await response;

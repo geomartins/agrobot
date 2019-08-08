@@ -25,7 +25,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "https://lumen.lilycourt.ng/api/v1/project_account_category/",{ params: value}
+                 "/api/v1/project_account_category/",{ params: value}
              );
 
              return await response;
@@ -46,7 +46,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "https://lumen.lilycourt.ng/api/v1/project_account_summary/",{ params: value}
+                 "/api/v1/project_account_summary/",{ params: value}
              );
 
              return await response;
@@ -67,7 +67,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "https://lumen.lilycourt.ng/api/v1/project_account_search/",{ params: value}
+                 "/api/v1/project_account_search/",{ params: value}
              );
 
              return await response;
@@ -87,7 +87,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "https://lumen.lilycourt.ng/api/v1/project_account_form/",{ params: value}
+                 "/api/v1/project_account_form/",{ params: value}
              );
 
              return await response;
