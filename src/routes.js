@@ -40,7 +40,7 @@ import UserPorfolio from './views/admin/UserPorfolio.vue';
 import UserPortfolioEdit from './views/admin/UserPortfolioEdit'
 import ProjectAccount from './views/admin/ProjectAccount.vue';
 import TransactionHistoryByPortfolio from './views/admin/TransactionHistoryByPortfolio.vue';
-import {store} from './store/store'
+// import {store} from './store/store'
 import TransactionHistory from './views/admin/TransactionHistory.vue';
 
 var token = localStorage.getItem("token");

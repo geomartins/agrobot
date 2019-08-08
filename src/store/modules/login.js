@@ -1,5 +1,3 @@
-import Vue from 'vue'
-import router from '../../routes'
 import axios from 'axios'
 
 
@@ -37,10 +35,7 @@ const mutations = {  //this.store.commit('updateEmail',value)
 const actions = {
 
       async login({commit},value){
-        //http://localhost:8080/
 
-       
-        
             try {
                var response = await axios
                 .get(
