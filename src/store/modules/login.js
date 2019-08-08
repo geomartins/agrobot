@@ -44,7 +44,7 @@ const actions = {
             try {
                var response = await axios
                 .get(
-                    "https://lumen.lilycourt.ng/api/v1/users/login/",{ params: value, crossdomain: true}
+                    "/api/v1/users/login/",{ params: value, crossdomain: true}
                 );
                 console.log(response)
                 return await response;
