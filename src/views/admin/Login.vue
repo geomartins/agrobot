@@ -101,58 +101,54 @@ export default {
 
     async api_calls() {
 
-        var response = await axios
-                .get(
-                    "https://agrobot.onrender.com/api/v1/users/login/",{ params: value, crossdomain: true}
-                );
-        console.log(response);
         
-        // var response;
-        // var x = this;
+        
+        var response;
+        var x = this;
 
-        // // Start loader gif
-        // this.toggle_loading(true);
-        // response = await this.$store.dispatch("login", this.api_params());
+        // Start loader gif
+        this.toggle_loading(true);
+        response = await this.$store.dispatch("login", this.api_params());
         
       
-        //    if( response && 'status' in response){
+           if( response && 'status' in response){
 
-        //      console.log(response);
+             console.log(response);
 
-        //       //If it is successful
-        //       if(response.status == 200){
-        //         let api_payload = response.data.message.original;
-        //         let access_token = api_payload.access_token;
+              //If it is successful
+              if(response.status == 200){
+                let api_payload = response.data.message.original;
+                let access_token = api_payload.access_token;
                 
-        //         // console.log(this.isValidToken(access_token))
+                // console.log(this.isValidToken(access_token))
 
-        //         if(this.isValidToken(access_token) == true){
-        //          await this.api_calls2(api_payload).then(()=>{
+                if(this.isValidToken(access_token) == true){
+                 await this.api_calls2(api_payload).then(()=>{
 
-        //             //setTimeout(function(){ 
-        //               //x.$router.push('/admin/dashboard');
-        //               window.location.href="/admin/dashboard";
-        //             //}, 3000);
+                    //setTimeout(function(){ 
+                      //x.$router.push('/admin/dashboard');
+                      window.location.href="/admin/dashboard";
+                    //}, 3000);
                      
-        //          })
-        //         }
-        //       }
+                 })
+                }
+              }
 
-        //        //If an error occured
-        //       if(response.status == 400 || response.status == 404){
+               //If an error occured
+              if(response.status == 400 || response.status == 404){
                 
-        //         console.log(response);
-        //           x.customAlert({
-        //           type: "error",
-        //           text: response.data.message,
-        //           title: "Oooops"
-        //           });
-        //       }
+                console.log(response);
+                  x.customAlert({
+                  type: "error",
+                  text: response.data.message,
+                  title: "Oooops"
+                  });
+              }
               
-        //     } 
+            } 
 
-        //     // End loader gif
-        //     x.toggle_loading(false);
+            // End loader gif
+            x.toggle_loading(false);
 
         
         

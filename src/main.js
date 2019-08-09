@@ -9,6 +9,7 @@ import VueSweetalert2 from 'vue-sweetalert2'
 import VueApexCharts from 'vue-apexcharts'
 import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
+import axios from 'axios'
 
 // axios.defaults.withCredentials = true;
 
@@ -29,7 +30,7 @@ Vue.use(VeeValidate, {
   validity: true
 });
 
-// Vue.use(axios)
+Vue.use(axios)
 // Vue.use(VueAxios)
 //Vue.use(VeeValidate);
 
