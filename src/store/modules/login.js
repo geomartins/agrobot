@@ -39,7 +39,7 @@ const actions = {
             try {
                var response = await axios
                 .get(
-                    "https://agrobot.onrender.com/api/v1/users/login/",{ params: value }
+                    "https://agrobot.onrender.com/api/v1/users/login",{ params: value }
                 );
                 console.log(response)
                 return await response;
