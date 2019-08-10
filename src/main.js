@@ -19,15 +19,16 @@ axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.interceptors.request.use(config => {
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
-  axios.defaults.baseURL = 'http://agrobot.onrender.com'
+  // axios.defaults.baseURL = 'http://agrobot.onrender.com'
 
-  config.baseURL = 'https://lumen.lilycourt.ng';
+  // config.baseURL = 'https://lumen.lilycourt.ng';
   console.log(config)
   return config;
 })
 
 axios.interceptors.response.use(res => {
-  // axios.interceptors.request.eject(reqInterceptor)
+  // axios.defaults.baseURL = 'http://agrobot.onrender.com'
+  // // axios.interceptors.request.eject(reqInterceptor)
   return res;
 })
 
