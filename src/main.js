@@ -11,6 +11,20 @@ import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
+axios.defaults.baseURL = 'https://agrobot.onrender.com'
+axios.defaults.headers.get['Accepts'] = 'application/json'
+
+axios.interceptors.request.use(config => {
+  console.log('Request interceptor',config);
+  //config.headers['ffhfhf']
+  return config;
+})
+
+axios.interceptors.response.use(res => {
+  console.log('',res);
+  return res;
+})
+
 // axios.defaults.withCredentials = true;
 
 
