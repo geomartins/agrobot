@@ -11,7 +11,7 @@ import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://agrobot.onrender.com'
+axios.defaults.baseURL = 'https://agrobot.onrender.com'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
@@ -21,13 +21,13 @@ axios.interceptors.request.use(config => {
   //config.baseURL['https://lumen.lilycourt.ng'];
   // axios.defaults.baseURL = 'http://agrobot.onrender.com'
 
-  // config.baseURL = 'https://lumen.lilycourt.ng';
+  config.baseURL = 'https://lumen.lilycourt.ng';
   console.log(config)
   return config;
 })
 
 axios.interceptors.response.use(res => {
-  // axios.defaults.baseURL = 'http://agrobot.onrender.com'
+  axios.defaults.baseURL = 'https://agrobot.onrender.com'
   // // axios.interceptors.request.eject(reqInterceptor)
   return res;
 })
