@@ -32,6 +32,8 @@ axios.defaults.url = ''
 
 
 axios.interceptors.response.use(res => {
+  axios.defaults.url = ''
+  console.log(axios.defaults.url)
   // axios.interceptors.request.eject(reqInterceptor)
   return res;
 })
