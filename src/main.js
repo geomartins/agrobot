@@ -21,13 +21,14 @@ axios.interceptors.request.use(config => {
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
 
-  config.baseURL = 'http://agrobot.onrender.com';
   config.baseURL = 'https://lumen.lilycourt.ng';
   console.log(config.baseURL)
   return config;
 })
 
 axios.interceptors.response.use(res => {
+
+  axios.defaults.baseURL = 'http://agrobot.onrender.com'
   console.log('Response interceptor',res);
   return res;
 })
