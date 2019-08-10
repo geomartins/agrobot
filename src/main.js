@@ -14,6 +14,8 @@ import axios from 'axios'
 axios.defaults.baseURL = 'https://agrobot.onrender.com'
 // http://localhost:8080/
 axios.defaults.headers.get['Accepts'] = 'application/json'
+axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
+
 
 axios.interceptors.request.use(config => {
   console.log('Request interceptor',config);
