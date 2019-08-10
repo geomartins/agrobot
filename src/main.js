@@ -16,7 +16,7 @@ axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
 
-const reqInterceptor = axios.interceptors.request.use(config => {
+axios.interceptors.request.use(config => {
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
 
@@ -29,10 +29,6 @@ axios.interceptors.response.use(res => {
   // axios.interceptors.request.eject(reqInterceptor)
   return res;
 })
-
-// axios.defaults.withCredentials = true;
-
-
 
 
 import {routes} from './routes'
