@@ -41,8 +41,8 @@ const actions = {
                 .get(
                     "/api/v1/users/login",{ params: value }
                 );
-                console.log(response)
-                //return await response;
+                
+                return await response;
     
     
             }catch(error){
