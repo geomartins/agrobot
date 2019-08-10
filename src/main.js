@@ -11,7 +11,7 @@ import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
-//axios.defaults.baseURL = 'http://agrobot.onrender.com'
+axios.defaults.baseURL = 'http://agrobot.onrender.com'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
