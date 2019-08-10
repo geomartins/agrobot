@@ -12,6 +12,7 @@ import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'https://agrobot.onrender.com'
+// http://localhost:8080/
 axios.defaults.headers.get['Accepts'] = 'application/json'
 
 axios.interceptors.request.use(config => {
@@ -21,7 +22,7 @@ axios.interceptors.request.use(config => {
 })
 
 axios.interceptors.response.use(res => {
-  console.log('',res);
+  console.log('Response interceptor',res);
   return res;
 })
 

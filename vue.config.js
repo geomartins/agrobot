@@ -5,12 +5,14 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-              target: 'https://lumen.lilycourt.ng/',
+              target: 'https://lumen.lilycourt.ng',
               ws: true,
               changeOrigin: true
             },
             
         }
+        
+        
          // proxy: 'https://lumen.lilycourt.ng/',
     }
 }
