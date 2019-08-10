@@ -42,11 +42,11 @@ const actions = {
                     "/api/v1/users/login",{ params: value }
                 );
                 console.log(response)
-                return await response;
+                //return await response;
     
     
             }catch(error){
-                 console.log(await error)
+                 
                 return await error.response;
             }
             
