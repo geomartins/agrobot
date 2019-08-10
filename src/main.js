@@ -19,6 +19,7 @@ axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.interceptors.request.use(config => {
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
+  axios.defaults.baseURL = 'http://agrobot.onrender.com'
 
   config.baseURL = 'https://lumen.lilycourt.ng';
   console.log(config)
