@@ -21,7 +21,9 @@ const reqInterceptor = axios.interceptors.request.use(config => {
   //config.baseURL['https://lumen.lilycourt.ng'];
 
   //config.baseURL = 'https://lumen.lilycourt.ng';
-  console.log(config)
+  var pre = config.url;
+  config.url = 'https://lumen.lilycourt.ng'+pre;
+  console.log(config.url)
   return config;
 })
 
