@@ -7,8 +7,12 @@ module.exports = {
             '/api': {
               target: 'https://lumen.lilycourt.ng',
               ws: true,
-              changeOrigin: true
+              changeOrigin: true,
+              pathRewrite: {
+                '^/api': ''
+              }
             },
+            
             
         }
         
