@@ -110,6 +110,10 @@ export default {
         this.toggle_loading(true);
         response = await this.$store.dispatch("login", this.api_params());
         
+        setTimeout(function(){ 
+          
+          console.log(response)
+        }, 10000);
       
           //  if( response && 'status' in response){
 
