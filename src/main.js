@@ -17,6 +17,7 @@ axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
 
 const reqInterceptor = axios.interceptors.request.use(config => {
+ 
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
 
@@ -26,6 +27,9 @@ const reqInterceptor = axios.interceptors.request.use(config => {
   console.log(config.url)
   return config;
 })
+
+axios.defaults.url = ''
+
 
 axios.interceptors.response.use(res => {
   // axios.interceptors.request.eject(reqInterceptor)
