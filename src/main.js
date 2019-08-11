@@ -29,11 +29,14 @@ axios.interceptors.request.use(config => {
 
   //replace 
 
-  
+  if (typeof prev === 'string' || prev instanceof String){
     var next = prev.replace("agrobot.onrender.com", "lumen.lilycourt.ng");
 
   
-    config.url = next;
+     config.url = next;
+  }
+  
+    
    
   console.log('request ===',config)
   return config;
