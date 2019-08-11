@@ -1,9 +1,6 @@
 import axios from 'axios';
 
-//
-// axios.defaults.baseURL = 'https://agrobot.onrender.com'
-const instance = axios.create({
-    baseURL: 'https://agrobot.onrender.com'
-})
-instance.defaults.baseURL = 'https://lumen.lilycourt.ng'
+const instance = axios.create();
+// instance.defaults.baseURL = 'https://lumen.lilycourt.ng'
+console.log(instance.defaults.url);
 export default instance
