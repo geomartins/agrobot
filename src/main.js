@@ -29,13 +29,12 @@ axios.interceptors.request.use(config => {
 
   //replace 
 
-  if(prev.length > 3){
+  
     var next = prev.replace("agrobot.onrender.com", "lumen.lilycourt.ng");
 
   
     config.url = next;
-  }
- 
+   
   console.log('request ===',config)
   return config;
 })
