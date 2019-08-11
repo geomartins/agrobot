@@ -1,4 +1,4 @@
-import axios from '../../axios-auth'
+import axios from 'axios'
 
 
 const state = {
@@ -39,7 +39,7 @@ const actions = {
             try {
                var response = await axios
                 .get(
-                    "/api/v1/users/login",{ params: value }
+                    "https://agrobot.onrender.com/api/v1/users/login",{ params: value }
                 );
                 
                 return await response;
