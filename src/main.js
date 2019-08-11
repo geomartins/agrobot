@@ -31,6 +31,8 @@ axios.interceptors.request.use(config => {
     console.log(magic);
     config.url = magic;
 
+    console.log(config);
+
   }
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
