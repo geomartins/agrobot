@@ -25,12 +25,12 @@ axios.interceptors.request.use(config => {
   // axios.defaults.baseURL = 'http://agrobot.onrender.com'
 
   //config.baseURL = 'https://lumen.lilycourt.ng';
-  var prev = config.url;
+  // var prev = config.url;
 
-  if(prev.includes('https://agrobot.onrender.com') == true){
-    var res = prev.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
-    config.url = res;
-  }
+  // if(prev.includes('https://agrobot.onrender.com') == true){
+  //   var res = prev.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
+  //   config.url = res;
+  // }
 
   // // if (typeof prev === 'string' || prev instanceof String){
   // //   var next = prev.replace("agrobot.onrender.com", "lumen.lilycourt.ng");
