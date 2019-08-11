@@ -11,7 +11,7 @@ import usersadd from './modules/usersadd'
 import projectaccount from './modules/projectaccount'
 import userportfolioedit from './modules/userportfolioedit'
 import transactionhistory from './modules/transactionhistory'
-import axios from '../axios-auth'
+import axios from 'axios'
 
 Vue.use(Vuex);
 
