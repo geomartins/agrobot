@@ -27,8 +27,6 @@ axios.interceptors.request.use(config => {
   //config.baseURL = 'https://lumen.lilycourt.ng';
   console.log('request ===',config)
   return config;
-}).then(()=>{
-
 })
 
 axios.interceptors.response.use(res => {
