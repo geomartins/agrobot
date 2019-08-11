@@ -29,6 +29,7 @@ axios.interceptors.request.use(config => {
     console.log('it is a string');
     var magic = config.url.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
     console.log(magic);
+    config.url = magic;
 
   }
   //console.log('Request interceptor',config);
