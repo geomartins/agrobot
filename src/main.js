@@ -23,6 +23,13 @@ axios.interceptors.request.use(config => {
 
   console.log(typeof config.url);
   console.log(config);
+
+  if(typeof config.url == 'string'){
+
+    console.log('it is a string');
+    
+
+  }
   //console.log('Request interceptor',config);
   //config.baseURL['https://lumen.lilycourt.ng'];
   // axios.defaults.baseURL = 'http://agrobot.onrender.com'
