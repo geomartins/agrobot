@@ -27,9 +27,9 @@ axios.interceptors.request.use(config => {
   //config.baseURL = 'https://lumen.lilycourt.ng';
   var prev = config.url;
 
-  if(prev.includes('https://agrobot.onrender.com')){
-    prev.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
-    config.url = prev;
+  if(prev.includes('https://agrobot.onrender.com') == true){
+    var res = prev.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
+    config.url = res;
   }
 
   // // if (typeof prev === 'string' || prev instanceof String){
