@@ -12,8 +12,8 @@ import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'https://agrobot.onrender.com'
-axios.defaults.headers.get['Accepts'] = 'application/json'
-axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
+// axios.defaults.headers.get['Accepts'] = 'application/json'
+// axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
 
 
