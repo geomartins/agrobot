@@ -14,7 +14,7 @@ import axios from 'axios'
 axios.defaults.baseURL = 'https://agrobot.onrender.com'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*'
+axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
 
 
 
@@ -31,7 +31,7 @@ axios.interceptors.request.use(config => {
     var magic = config.url.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
     console.log(magic);
     config.url = magic;
-    config.baseURL = 'https://lumen.lilycourt.ng'
+    config.baseURL = 'https://agrobot.onrender.com'
 
     console.log(config);
 
