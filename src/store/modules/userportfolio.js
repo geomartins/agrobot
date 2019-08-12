@@ -80,7 +80,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/generate_room_types/",{ params: value}
+                 "/api/v1/generate_room_types",{ params: value}
              );
 
              return await response;
@@ -101,7 +101,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/generate_equity_types/",{ params: value}
+                 "/api/v1/generate_equity_types",{ params: value}
              );
 
              return await response;
@@ -123,7 +123,7 @@ const actions = {
         try {
              var response = await axios
              .get(
-                 "/api/v1/users_portfolio_add/",{ params: value}
+                 "/api/v1/users_portfolio_add",{ params: value}
              );
              return await response;
  
@@ -146,7 +146,7 @@ const actions = {
         try {
              var response = await axios
              .get(
-                 "/api/v1/list_my_portfolios/",{ params: value}
+                 "/api/v1/list_my_portfolios",{ params: value}
              );
 
             

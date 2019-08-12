@@ -23,7 +23,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/users_list_edit/",{ params: value}
+                 "/api/v1/users_list_edit",{ params: value}
              );
 
              return await response;

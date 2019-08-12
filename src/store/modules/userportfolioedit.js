@@ -22,7 +22,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/portfolio_transaction_history/",{ params: value}
+                 "/api/v1/portfolio_transaction_history",{ params: value}
              );
 
              return await response;
@@ -44,7 +44,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/portfolio_transaction_history_add/",{ params: value}
+                 "/api/v1/portfolio_transaction_history_add",{ params: value}
              );
 
             

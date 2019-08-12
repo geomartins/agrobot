@@ -24,7 +24,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/transaction_lists/",{ params: value}
+                 "/api/v1/transaction_lists",{ params: value}
              );
 
              
@@ -46,7 +46,7 @@ const actions = {
         try {
             var response = await axios
              .get(
-                 "/api/v1/transaction_lists_search/",{ params: value}
+                 "/api/v1/transaction_lists_search",{ params: value}
              );
 
              return await response;
