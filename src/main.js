@@ -11,67 +11,26 @@ import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://lumen.lilycourt.ng'
+axios.defaults.baseURL = 'https://agrobot.onrender.com/'
+// http://localhost:8080/
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
-// axios.defaults.headers.get['Access-Control-Allow-Credentials'] = true
-axios.defaults.headers.get['Access-Control-Allow-Methods'] = ' DELETE, GET,OPTIONS, POST,PUT, PATCH'
-axios.defaults.headers.get['Access-Control-Allow-Headers'] = 'Content-Type,X-Auth-Token,Origin,Authorization '
-axios.defaults.headers.get['Access-Control-Expose-Headers'] = 'Cache-Control, Content-Language, Content-Type, Expires,Last-Modified, Pragma'
-axios.defaults.headers.get['Access-Control-Max-Age'] = 60 * 60 * 24, 
-
-
-
 
 
 axios.interceptors.request.use(config => {
-
-  console.log(typeof config.url);
-  console.log(config);
-
-  if(typeof config.url == 'string'){
-
-    console.log('it is a string');
-    // var magic = config.url.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
-    // console.log(magic);
-    // config.url = magic;
-    config.baseURL = 'https://lumen.lilycourt.ng'
-
-    console.log(config);
-
-  }
-  //console.log('Request interceptor',config);
-  //config.baseURL['https://lumen.lilycourt.ng'];
-  // axios.defaults.baseURL = 'http://agrobot.onrender.com'
-
-  //config.baseURL = 'https://lumen.lilycourt.ng';
-  // var prev = config.url;
-
-  // if(prev.includes('https://agrobot.onrender.com') == true){
-  //   var res = prev.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
-  //   config.url = res;
-  // }
-
-  // // if (typeof prev === 'string' || prev instanceof String){
-  // //   var next = prev.replace("agrobot.onrender.com", "lumen.lilycourt.ng");
-
-  
-  // //    config.url = next;
-  // // }
-  
-  // config.baseURL = 'https://lumen.lilycourt.ng';
-    
-  //console.log('request ===',config.url)
+  console.log('Request interceptor',config);
+  //config.headers['ffhfhf']
   return config;
 })
 
 axios.interceptors.response.use(res => {
-  //axios.defaults.baseURL = 'https://agrobot.onrender.com'
-  console.log('response ===',res)
-  // // axios.interceptors.request.eject(reqInterceptor)
+  console.log('Response interceptor',res);
   return res;
 })
+
+// axios.defaults.withCredentials = true;
+
+
 
 
 import {routes} from './routes'
