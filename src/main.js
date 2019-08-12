@@ -15,11 +15,11 @@ import axios from 'axios'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
-// axios.defaults.headers.get['Access-Control-Allow-Credentials'] = true
-// axios.defaults.headers.get['Access-Control-Allow-Methods'] = ' DELETE, GET,OPTIONS, POST,PUT, PATCH'
-// axios.defaults.headers.get['Access-Control-Allow-Headers'] = 'Content-Type,X-Auth-Token,Origin,Authorization '
-// axios.defaults.headers.get['Access-Control-Expose-Headers'] = 'Cache-Control, Content-Language, Content-Type, Expires,Last-Modified, Pragma'
-// axios.defaults.headers.get['Access-Control-Max-Age'] = 60 * 60 * 24, 
+axios.defaults.headers.get['Access-Control-Allow-Credentials'] = true
+axios.defaults.headers.get['Access-Control-Allow-Methods'] = ' DELETE, GET,OPTIONS, POST,PUT, PATCH'
+axios.defaults.headers.get['Access-Control-Allow-Headers'] = 'Content-Type,X-Auth-Token,Origin,Authorization '
+axios.defaults.headers.get['Access-Control-Expose-Headers'] = 'Cache-Control, Content-Language, Content-Type, Expires,Last-Modified, Pragma'
+axios.defaults.headers.get['Access-Control-Max-Age'] = 60 * 60 * 24, 
 
 
 
