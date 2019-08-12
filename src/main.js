@@ -36,7 +36,7 @@ axios.interceptors.request.use(config => {
     var magic = config.url.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
     console.log(magic);
     config.url = magic;
-    //config.baseURL = 'https://lumen.lilycourt.ng'
+    config.baseURL = 'https://lumen.lilycourt.ng'
 
     console.log(config);
 
