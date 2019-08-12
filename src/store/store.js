@@ -78,9 +78,7 @@ export const store = new Vuex.Store({
             try {
                 var response = await axios
                  .get(
-                    "https://agrobot.onrender.com/api/v1/charts/",{ params: value, headers: {
-                        'Access-Control-Allow-Origin': '*'
-                    }}
+                    "https://agrobot.onrender.com/api/v1/charts/",{ params: value}
                  );
 
                  return await response;
@@ -109,9 +107,7 @@ export const store = new Vuex.Store({
             try {
                 var response = await axios
                  .get(
-                    "https://agrobot.onrender.com/api/v1/counters/",{ params: value,headers: {
-                        'Access-Control-Allow-Origin': '*'
-                    }}
+                    "https://agrobot.onrender.com/api/v1/counters/",{ params: value,}
                  );
  
                  return await response;
