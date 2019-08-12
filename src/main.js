@@ -11,7 +11,7 @@ import VeeValidate from 'vee-validate'
 import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://agrobot.onrender.com'
+//axios.defaults.baseURL = 'https://agrobot.onrender.com'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
@@ -31,7 +31,7 @@ axios.interceptors.request.use(config => {
     var magic = config.url.replace('https://agrobot.onrender.com','https://lumen.lilycourt.ng');
     console.log(magic);
     config.url = magic;
-    config.baseURL = 'https://agrobot.onrender.com'
+    //config.baseURL = 'https://agrobot.onrender.com'
 
     console.log(config);
 
