@@ -167,7 +167,7 @@ export default {
     }
   },
   beforeCreate(){
-      this.seoTitle('Login')
+      this.seoMetaTitle('Login')
          
   }
 };

@@ -193,8 +193,8 @@ export const pick ={
            }
         },
 
-        seoTitle(title){
-            return title ? title : ''
+        seoMetaTitle(title){
+            return localStorage.setItem('meta_title',title);
         }
 
         
@@ -239,9 +239,8 @@ export const pick ={
           content: 'Lilycourt Admin Portal'
         }],
         titleTemplate(titleChunk){
-            var x = this;
-            console.log(this.seoTitle);
-            var dynamicTitle = '.........';
+            
+            var dynamicTitle = localStorage.getItem('meta_title');
             
             if(dynamicTitle){
                 return titleChunk ? `${dynamicTitle} |  ${titleChunk}` : 'Site Title';
