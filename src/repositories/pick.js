@@ -184,6 +184,8 @@ export const pick ={
             }
 
 
+            return window.location.href ='/';
+
             console.log('result is ',resultant)
 
            if(resultant == false){
