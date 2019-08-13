@@ -166,7 +166,7 @@ export default {
       
     }
   },
-  beforeCreate(){
+  created(){
       this.seoMetaTitle('Login')
          
   }
