@@ -191,7 +191,13 @@ export const pick ={
            if(resultant == false){
                window.location.href ='/';
            }
+        },
+
+        titleTemplate: (titleChunk) => {
+            // If undefined or blank then we don't need the hyphen
+            return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
         }
+          
 
     },
     filters: {
