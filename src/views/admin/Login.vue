@@ -122,16 +122,16 @@ export default {
                 
                 console.log(this.isValidToken(access_token))
 
-                // if(this.isValidToken(access_token) == true){
-                //  await this.api_calls2(api_payload).then(()=>{
+                if(this.isValidToken(access_token) == true){
+                 await this.api_calls2(api_payload).then(()=>{
 
-                //     //setTimeout(function(){ 
-                //       //x.$router.push('/admin/dashboard');
-                //       window.location.href="/admin/dashboard";
-                //     //}, 3000);
+                    //setTimeout(function(){ 
+                      //x.$router.push('/admin/dashboard');
+                      window.location.href="/admin/dashboard";
+                    //}, 3000);
                      
-                //  })
-                // }
+                 })
+                }
               }
 
                //If an error occured

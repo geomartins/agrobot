@@ -103,6 +103,9 @@ export default {
 
          
 
+    },
+    beforeCreate(){
+       this.protectAdmin();
     }
 
     

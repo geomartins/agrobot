@@ -139,10 +139,28 @@ export const pick ={
         isValidToken(token){
             const payload = this.payload(token);
 
-            console.log(payload);
+           
 
             if(payload){
-                return true;
+
+                if(payload.iss == "https://lumen.lilycourt.ng/api/v1/users/login"){
+                    return true;
+                }
+                return false;
+            }
+
+            return false;
+        },
+
+        isValidTokenX(token){
+            const payload = this.payload(token);
+
+            if(payload){
+
+            
+                    return true;
+                
+                
             }
 
             return false;
@@ -154,6 +172,20 @@ export const pick ={
         },
         decode(payload){
             return JSON.parse(atob(payload));
+        },
+        protectAdmin(){
+
+            var resultant;
+            const storedToken = localStorage.getItem("token");
+            if(storedToken){
+                resultant = this.isValidTokenX(storedToken);
+            }else{
+                resultant = false;
+            }
+
+           if(resultant == false){
+               window.location.href ='/';
+           }
         }
 
     },
