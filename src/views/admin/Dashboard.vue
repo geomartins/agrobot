@@ -229,7 +229,7 @@
                 if(response.status == 404){
 
                     console.log(response.data.message)
-                    this.customLogout();
+                    //this.customLogout();
                 }
 
                 if(response.status == 200){
