@@ -224,7 +224,7 @@
       
       async created(){
 
-        this.protectAdmin();
+          //this.protectAdmin();
 
 
           
