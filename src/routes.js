@@ -22,14 +22,8 @@ export const routes = [
        if(token){ next('/admin/dashboard') ; }
        next();
     }},
-    { path: '/admin/dashboard', name: 'AdminDashboard', component: Dashboard, beforeEnter: (to, from, next) => {
-       if(!token){ next('/'); }
-       next();
-    }},
-    { path: '/users/add', name: 'UsersAdd', component: UsersAdd , beforeEnter: (to, from, next) => {
-       if(!token){ next('/'); }
-       next();
-    } },
+    { path: '/admin/dashboard', name: 'AdminDashboard', component: Dashboard },
+    { path: '/users/add', name: 'UsersAdd', component: UsersAdd },
     { path: '/users/list', name: 'UsersList', component: UsersList },
     { path: '/admin/list', name: 'AdminList', component: AdminList },
     { path: '/portfolio/list', name: 'PortfolioList', component: PortfolioList },

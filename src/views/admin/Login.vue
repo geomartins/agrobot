@@ -113,7 +113,7 @@ export default {
       
            if( response && 'status' in response){
 
-             console.log(response);
+             
 
               //If it is successful
               if(response.status == 200){
@@ -137,7 +137,7 @@ export default {
                //If an error occured
               if(response.status == 400 || response.status == 404){
                 
-                console.log(response);
+                
                   x.customAlert({
                   type: "error",
                   text: response.data.message,

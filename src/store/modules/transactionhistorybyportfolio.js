@@ -11,7 +11,7 @@ const actions = {
     async SUBMIT_TRANSACTION_HISTORY_BY_PORTFOLIO({commit},value){
 
 
-        //console.log(value);
+        
 
  
         var user_id = value.user_id || '-';

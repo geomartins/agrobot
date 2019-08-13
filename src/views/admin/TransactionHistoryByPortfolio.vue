@@ -195,8 +195,6 @@ export default {
              var response =await this.$store.dispatch('SUBMIT_TRANSACTION_HISTORY_BY_PORTFOLIO',this.api_params());
              if(response.success){
 
-                //console.log(response.success);
-
                 //Reload the page
                 this.api_calls('GET_PAYMENT_HISTORY_FROM_PORTFOLIO_ID')
              }

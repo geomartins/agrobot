@@ -264,9 +264,9 @@ export default {
           response = await this.$store.dispatch('list_my_portfolios', this.api_params(value));
 
            if(response && 'status' in response){
-             console.log(response.data);
+             
             if(response.status == 200){
-              //console.log(response.data.message);
+              
                 this.my_portfolios = response.data.message;
             }
           }
