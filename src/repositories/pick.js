@@ -184,7 +184,7 @@ export const pick ={
             }
 
 
-            console.log(resultant)
+            console.log('result is ',resultant)
 
            if(resultant == false){
                window.location.href ='/';
