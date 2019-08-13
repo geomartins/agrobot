@@ -133,7 +133,7 @@
 <script>
    import Legend from '../layouts/Legend';
    import { pick } from '../../repositories/pick'
-   import { auth } from '../../middleware/auth'
+  // import { auth } from '../../middleware/auth'
    import 'es6-promise/auto'
    
    
@@ -141,7 +141,7 @@
   
 
   export default{
-      mixins: [pick, auth],
+      mixins: [pick],
       components: {
           'app-legend' : Legend,
 
