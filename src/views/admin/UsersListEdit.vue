@@ -319,6 +319,9 @@ export default {
   },
   created() {
 
+    //updating seo title tag
+    this.seoMetaTitle('User Details Edit')
+
     // Updating title meta tag
     this.$store.commit('updateTitle','User Details Edit');
 
