@@ -34,7 +34,7 @@ const mutations = {  //this.store.commit('updateEmail',value)
 
 const actions = {
 
-      async login({commit},value){
+    async login({commit},value){
 
             try {
                var response = await axios
@@ -56,7 +56,35 @@ const actions = {
 
         
         
-    }
+    },
+
+    async protectAdmin({commit},value){
+
+        try {
+           var response = await axios
+            .get(
+                "/protectAdmin",{ params: value }
+            );
+            
+            return await response;
+
+
+        }catch(error){
+             
+            return await error.response;
+        }
+        
+
+        
+ 
+
+    
+    
+}
+
+
+
+
 
 }
 

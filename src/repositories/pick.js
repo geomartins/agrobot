@@ -173,25 +173,7 @@ export const pick ={
         decode(payload){
             return JSON.parse(atob(payload));
         },
-        protectAdmin(){
-
-            var resultant;
-            const storedToken = localStorage.getItem("token");
-            if(storedToken){
-                resultant = this.isValidTokenX(storedToken);
-            }else{
-                resultant = false;
-            }
-
-
-            return window.location.href ='/';
-
-            console.log('result is ',resultant)
-
-           if(resultant == false){
-               window.location.href ='/';
-           }
-        },
+        
 
         seoMetaTitle(title){
             return localStorage.setItem('meta_title',title);

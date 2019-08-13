@@ -132,7 +132,8 @@
 
 <script>
    import Legend from '../layouts/Legend';
-   import { pick } from '../../repositories/pick';
+   import { pick } from '../../repositories/pick'
+   import { auth } from '../../middleware/auth'
    import 'es6-promise/auto'
    
    
@@ -140,7 +141,7 @@
   
 
   export default{
-      mixins: [pick],
+      mixins: [pick, auth],
       components: {
           'app-legend' : Legend,
 
@@ -222,6 +223,10 @@
       } ,
       
       async created(){
+
+          
+          //checking
+          this.protectAdmin();
 
           //updating seo title tag
           this.seoMetaTitle('Dashboard')
