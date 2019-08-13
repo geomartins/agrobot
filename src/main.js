@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
+import VueMeta from 'vue-meta'
+
 
 import App from './App.vue'
 import Loader from './views/errors/Loader'
@@ -35,6 +37,7 @@ Vue.component('custom-connection', Connection)
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
+Vue.use(VueMeta)
 Vue.use(VueSweetalert2)
 Vue.use(VeeValidate, {
   validity: true

@@ -71,6 +71,14 @@ import { pick } from "../../repositories/pick";
 import 'es6-promise/auto'
 
 export default {
+  metaInfo: {
+    title: 'Login | Lilycourt ',
+    meta: [{
+      vmid: 'description',
+      name: 'description',
+      content: 'Lilycourt Admin Portal'
+    }],
+  },
   components: {
     "app-login-header": LoginHeader
   },
@@ -120,7 +128,7 @@ export default {
                 let api_payload = response.data.message.original;
                 let access_token = api_payload.access_token;
                 
-                console.log(this.isValidToken(access_token))
+                
 
                 if(this.isValidToken(access_token) == true){
                  await this.api_calls2(api_payload).then(()=>{
