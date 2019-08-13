@@ -432,6 +432,8 @@ export default {
 
     
        
+        //updating seo title tag
+        this.seoMetaTitle('User Portfolio')
 
         //Updating of page title
         this.$store.commit('updateTitle',this.name+' Portfolio');

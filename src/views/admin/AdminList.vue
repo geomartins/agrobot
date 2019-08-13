@@ -94,7 +94,8 @@ export default {
   },
    created(){
         
-        // this.protectAdmin();
+        //updating seo title tag
+        this.seoMetaTitle('Admin List')
 
         // Updating title meta tag
         this.$store.commit('updateTitle','View Admin');

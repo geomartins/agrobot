@@ -223,6 +223,9 @@
       
       async created(){
 
+          //updating seo title tag
+          this.seoMetaTitle('Dashboard')
+
           //updating title meta tag
           this.$store.commit('updateTitle','Dashboard');
 

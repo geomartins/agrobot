@@ -171,6 +171,9 @@ export default {
   },
    created(){
 
+        //updating seo title tag
+        this.seoMetaTitle('Portfolio List')
+
         // Updating title meta tag
         this.$store.commit('updateTitle','Portfolios');
 

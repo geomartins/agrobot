@@ -167,6 +167,8 @@ export default {
     }
   },
   created(){
+
+      //updating seo title tag
       this.seoMetaTitle('Login')
          
   }

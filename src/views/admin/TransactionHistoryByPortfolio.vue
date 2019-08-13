@@ -225,6 +225,9 @@ export default {
   
   async created(){
 
+        //updating seo title tag
+        this.seoMetaTitle('Portfolio Transaction History')
+
         //Updating of page title
         this.$store.commit('updateTitle','Transaction_history  [ '+'LCN:'+ this.routeParameters.user_portfolio_id+' ]');
         

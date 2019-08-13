@@ -428,6 +428,9 @@ export default {
   },
    created(){
 
+        //updating seo title tag
+        this.seoMetaTitle('Project Account')
+
         this.refresh();
 
         

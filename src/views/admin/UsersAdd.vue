@@ -287,6 +287,10 @@ export default {
   },
 
   created(){
+
+        //updating seo title tag
+        this.seoMetaTitle('Create User')
+
         //updating page meta data
         this.$store.commit('updateTitle','Create User');
   }

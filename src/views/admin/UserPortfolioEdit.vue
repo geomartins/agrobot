@@ -278,7 +278,8 @@ export default {
   created(){
 
     
-      
+       //updating seo title tag
+        this.seoMetaTitle('Portfolio Payment History')
 
         ////Updating of page title
         this.$store.commit('updateTitle','Portfolio Payment History');

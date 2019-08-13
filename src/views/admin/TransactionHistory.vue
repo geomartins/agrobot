@@ -180,6 +180,9 @@ export default {
   },
    created(){
 
+        //updating seo title tag
+        this.seoMetaTitle('Transaction History')
+
         // Updating title meta tag
         this.$store.commit('updateTitle','Transaction History');
 
