@@ -42,8 +42,7 @@ export default {
     let response = await this.$store.dispatch('protectAdmin',{ token: this.$store.getters.getToken});
     if(response && 'status' in response){
 
-        console.log(response)
-        if(response.status == 404){
+        if(response.status == 401){
             if(response.data.message.includes('Unauthenticated')){
                  this.customLogout();
             }
