@@ -193,10 +193,7 @@ export const pick ={
            }
         },
 
-        titleTemplate: (titleChunk) => {
-            // If undefined or blank then we don't need the hyphen
-            return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
-        }
+        
           
 
     },
@@ -237,5 +234,9 @@ export const pick ={
           name: 'description',
           content: 'Lilycourt Admin Portal'
         }],
+        titleTemplate: (titleChunk) => {
+            // If undefined or blank then we don't need the hyphen
+            return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
+        }
     },
 }
