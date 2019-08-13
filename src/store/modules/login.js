@@ -63,7 +63,7 @@ const actions = {
         try {
            var response = await axios
             .get(
-                "/protectAdmin",{ params: value }
+                "/api/v1/protectAdmin",{ params: value }
             );
             
             return await response;
