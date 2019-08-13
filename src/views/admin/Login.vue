@@ -166,7 +166,7 @@ export default {
       
     }
   },
-  created(){
+  beforeCreate(){
       this.seoTitle('Login')
          
   }

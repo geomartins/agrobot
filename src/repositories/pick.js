@@ -240,7 +240,7 @@ export const pick ={
         }],
         titleTemplate: (titleChunk) =>{
             var x = this;
-            var dynamicTitle = 'rrrrrrrrrr';
+            var dynamicTitle = x.seoTitle('444');
             
             if(dynamicTitle){
                 return titleChunk ? `${dynamicTitle} |  ${titleChunk}` : 'Site Title';
