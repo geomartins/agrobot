@@ -193,6 +193,10 @@ export const pick ={
            }
         },
 
+        seoTitle(title){
+            return title ? title : ''
+        }
+
         
           
 
@@ -228,15 +232,19 @@ export const pick ={
         }
     },
     metaInfo: {
-        title: 'Login | Lilycourt ',
+        title: 'Lilycourt ',
         meta: [{
           vmid: 'description',
           name: 'description',
           content: 'Lilycourt Admin Portal'
         }],
-        titleTemplate: (titleChunk) => {
-            // If undefined or blank then we don't need the hyphen
-            return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
+        titleTemplate(titleChunk){
+            var dynamicTitle = this.seoTitle();
+            
+            if(dynamicTitle){
+                return titleChunk ? `${dynamicTitle} |  ${titleChunk}` : 'Site Title';
+            }
+            
         }
     },
 }

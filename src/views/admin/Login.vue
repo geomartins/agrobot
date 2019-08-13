@@ -165,6 +165,10 @@ export default {
       }
       
     }
+  },
+  async created(){
+      this.seoTitle('Login')
+         
   }
 };
 </script>
