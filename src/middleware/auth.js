@@ -5,9 +5,9 @@ export const auth ={
 
     methods:{
 
-        async protectAdmin(){
+        protectAdmin(){
 
-            let response =await this.$store.dispatch('protectAdmin',{ token: this.$store.getters.getToken});
+            let response = this.$store.dispatch('protectAdmin',{ token: this.$store.getters.getToken});
             if(response && 'status' in response){
                 if(response.status == 404){
 
