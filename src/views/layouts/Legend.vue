@@ -27,8 +27,10 @@ import Header from "./Header";
 import SideBar from "./SideBar";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import { pick } from "../../repositories/pick"
 
 export default {
+  mixins: [pick],
   components: {
     "app-header": Header,
     "app-side-bar": SideBar,
@@ -42,7 +44,7 @@ export default {
         if(response.status == 404){
 
             console.log(response.data.message)
-            //this.customLogout();
+            this.customLogout();
         }
 
         if(response.status == 200){
