@@ -223,5 +223,13 @@ export const pick ={
 
             return 2;
         }
-    }
+    },
+    metaInfo: {
+        title: 'Login | Lilycourt ',
+        meta: [{
+          vmid: 'description',
+          name: 'description',
+          content: 'Lilycourt Admin Portal'
+        }],
+    },
 }

@@ -71,14 +71,6 @@ import { pick } from "../../repositories/pick";
 import 'es6-promise/auto'
 
 export default {
-  metaInfo: {
-    title: 'Login | Lilycourt ',
-    meta: [{
-      vmid: 'description',
-      name: 'description',
-      content: 'Lilycourt Admin Portal'
-    }],
-  },
   components: {
     "app-login-header": LoginHeader
   },
