@@ -238,8 +238,9 @@ export const pick ={
           name: 'description',
           content: 'Lilycourt Admin Portal'
         }],
-        titleTemplate(titleChunk){
-            var dynamicTitle = this.seoTitle();
+        titleTemplate: (titleChunk) =>{
+            var x = this;
+            var dynamicTitle = x.seoTitle();
             
             if(dynamicTitle){
                 return titleChunk ? `${dynamicTitle} |  ${titleChunk}` : 'Site Title';
