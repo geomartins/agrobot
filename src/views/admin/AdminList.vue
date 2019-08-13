@@ -93,7 +93,9 @@ export default {
     
   },
    created(){
-
+        
+        this.protectAdmin();
+        
         // Updating title meta tag
         this.$store.commit('updateTitle','View Admin');
 
