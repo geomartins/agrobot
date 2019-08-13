@@ -166,7 +166,7 @@ export default {
       
     }
   },
-  async created(){
+  created(){
       this.seoTitle('Login')
          
   }

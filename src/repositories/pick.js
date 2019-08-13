@@ -244,6 +244,8 @@ export const pick ={
             if(dynamicTitle){
                 return titleChunk ? `${dynamicTitle} |  ${titleChunk}` : 'Site Title';
             }
+
+            return titleChunk ? `${titleChunk} ` : 'Site Title';
             
         }
     },
