@@ -12,24 +12,17 @@ import Connection from './views/layouts/Connection'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'https://lumen.lilycourt.ng/'
-// http://localhost:8080/
 axios.defaults.headers.get['Accepts'] = 'application/json'
 axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
 
 
 axios.interceptors.request.use(config => {
-  console.log('Request interceptor',config);
-  //config.headers['ffhfhf']
   return config;
 })
 
 axios.interceptors.response.use(res => {
-  console.log('Response interceptor',res);
   return res;
 })
-
-// axios.defaults.withCredentials = true;
-
 
 
 
@@ -48,10 +41,7 @@ Vue.use(VeeValidate, {
 });
 
 Vue.use(axios)
-// Vue.use(VueAxios)
-//Vue.use(VeeValidate);
 
-//Vue.http.options.root ='http://www.lilycourt.ng/lilycourt';
 
 const router = new VueRouter({
   routes,
@@ -60,14 +50,6 @@ const router = new VueRouter({
 });
 
 
-
-
-// import Vue from "vue";
-// import App from "./App.vue";
-// import router from "./router";
-// import store from "./store";
-
-//Vue.config.productionTip = false;
 
 new Vue({
   router,

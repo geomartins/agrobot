@@ -23,6 +23,8 @@ export const pick ={
 
         customLogout(){
             localStorage.removeItem('token');
+            localStorage.removeItem('fullname');
+
             this.customRedirect('/'); 
         },
         customAlert(obj){
@@ -136,6 +138,8 @@ export const pick ={
 
         isValidToken(token){
             const payload = this.payload(token);
+
+            console.log(payload);
 
             if(payload){
                 return true;
